@@ -20,7 +20,7 @@
   <header id="navbar" class="container mt-5 mx-auto px-3 text-black">
     <nav>
       <!-- Mobile/Sticky Menu -->
-      <div id="sticky_menu" class="w-full top-0 left-0 z-50 bg-white mb-10">
+      <div id="sticky_menu" class="relative w-full top-0 left-0 z-50 bg-white mb-10">
         <div class="flex items-center justify-between h-24">
 
           <!-- Logo -->
@@ -32,11 +32,10 @@
 
           <!-- Navigation Menu -->
           <div id="nav_menu"
-            class="absolute top-0 right-0 hidden min-h-[70vh] w-[70%] bg-white shadow-2xl lg:flex flex-col gap-5 duration-500 ease-out overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto lg:flex-row lg:items-center">
+            class="sticky top-0 right-0 hidden min-h-[70vh] w-[70%] bg-white shadow-2xl lg:flex flex-col gap-5 duration-500 ease-out overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto lg:flex-row lg:items-center">
 
             <!-- Close Icon (only mobile) -->
             <div class="container flex items-center justify-end h-40">
-              <div></div>
               <div id="closeicon" class="text-3xl cursor-pointer lg:hidden">
                 <img
                   src="data:image/svg+xml,%3csvg%20width='32'%20height='31'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='%2300001A'%20fill-rule='evenodd'%3e%3cpath%20d='m2.919.297%2028.284%2028.284-2.122%202.122L.797%202.419z'/%3e%3cpath%20d='M.797%2028.581%2029.081.297l2.122%202.122L2.919%2030.703z'/%3e%3c/g%3e%3c/svg%3e"
