@@ -26,19 +26,22 @@
             <img src="./assets/images/logo.svg" alt="logo" class="w-20">
           </div>
 
+          <div id="backdrop" class="bg-black/50 fixed inset-0 hidden"></div>
+
           <!-- Navigation Menu -->
+          <div id="backdrop" class="fixed inset-0 bg-black/50 hidden transition-opacity duration-300 z-40"></div>
           <div id="nav_menu"
-            class="absolute top-0 right-0 hidden min-h-[80vh] w-[70%] bg-white lg:flex flex-col gap-5 duration-500 ease-out overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto lg:flex-row lg:items-center">
+            class="fixed top-0 right-0 bottom-0 z-99 hidden min-h-[80vh] w-[70%] bg-white lg:flex flex-col gap-5 duration-500 ease-out overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto lg:flex-row lg:items-center">
 
             <!-- Close Icon (only mobile) -->
-            <div class="container flex items-center justify-end h-40">
+            <div class="container flex items-center justify-end h-24">
               <div></div>
-              <div id="closeicon" class="text-3xl cursor-pointer lg:hidden">
+              <div id="closeicon" class="text-3xl mr-3 mt-[70px] cursor-pointer lg:hidden">
                 <img src="./assets/images/icon-menu-close.svg" alt="close menu">
               </div>
             </div>
             <!-- Menu Links -->
-            <ul class="flex flex-col items-start gap-10 lg:flex-row lg:items-center ml-10">
+            <ul class="flex flex-col items-start py-5 gap-10 lg:flex-row lg:items-center ml-10">
               <li><a href="#" class="text-xl font-medium text-[#5d5f79] hover:text-[#f15e50] duration-300">Home</a></li>
               <li><a href="#" class="text-xl font-medium text-[#5d5f79] hover:text-[#f15e50] duration-300">New</a></li>
               <li><a href="#" class="text-xl font-medium text-[#5d5f79] hover:text-[#f15e50] duration-300">Popular</a>
@@ -57,6 +60,8 @@
       </div>
     </nav>
   </header>
+
+
   <div class="container mx-auto md:flex md:flex-row gap-10 mb-5 px-3">
     <div class="w-full">
       <div class="mb-[35px]">
@@ -74,7 +79,7 @@
             But is it really fulfilling its promise?
           </p>
           <button
-            class="flex h-14 w-48 bg-[#f15e50] items-center justify-center font-bold text-black tracking-widest uppercase mt-12 mb-5 overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:bg-black before:duration-500 before:ease-out hover:text-white hover:before:h-15 hover:before:w-50">
+            class="flex h-14 w-48 bg-[#f15e50] items-center justify-center font-bold text-black tracking-widest uppercase mt-12 overflow-hidden transition-all before:absolute before:h-0 before:w-0 before:bg-black before:duration-500 before:ease-out hover:text-white hover:before:h-15 hover:before:w-50">
             <span class="z-10">Read more</span>
           </button>
         </div>
